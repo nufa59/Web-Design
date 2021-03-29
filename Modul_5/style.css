@@ -1,0 +1,29 @@
+body {
+    background-color: darkcyan;
+}
+
+h1 {
+    color: rgb(18, 1, 117);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.kotak {
+    padding: 20px;
+    width: fit-content;
+    color: white;
+    margin: 10px;
+    background: rgb(46, 139, 214);
+}
+
+#persegi {
+    padding: 40px;
+    width: fit-content;
+    color: white;
+    margin: 10px;
+    background: rgb(150, 45, 97);
+}

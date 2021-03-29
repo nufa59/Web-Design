@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(img/herringbone.png);    
+}
+
+.container {
+    width: 800px;
+    background-color: #eaeaea;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner {
+    background-image: url(img/bg_2.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position-y: -350px;
+    border-bottom: 10px solid salmon;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #222;
+}
+
+li h2 {
+    color: white;
+    font-size: 12px;
+    padding: 14px 16px; 
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    background-color: white;
+    min-height: 800px;
+    padding: 40px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+p.penulis {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+h1.judul {
+    font-size: 30px;
+}
+.penulis a:link, .penulis a:visited {
+    text-decoration: none;
+    color: salmon;
+}
+
+.penulis a:hover, .penulis   a:active {
+    text-decoration: none;
+    color: dodgerblue;
+    text-decoration: none;
+}
+.photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.gallery {
+    border: 1px solid #aaa;
+    float: left;
+    width: 160px;
+    margin: 5px;
+}
+
+.gallery:hover {
+    border: 1px solid #555;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+.about {
+    margin-top: 30px;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 10px;
+}
+.about img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
