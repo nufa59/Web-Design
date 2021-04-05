@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.4 Membuat Layout HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="kiri">
+            <br>
+            <center>
+                <img id="logo" src="images/logo_mhs.png" alt="logo uns" height="200" width="200">
+            </center>
+            <br>
+            <h2>Artikel Populer</h2>
+            <ul>
+                <li><a href="#">Desain Web</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Lain-lain</a></li>
+            </ul>
+        </div>
+
+        <div id="header">
+            <div id="judul">
+                <a href="#">Belajar Pemrograman</a>
+            </div>
+            <div class="desc">Belajar Web Design</div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Galeri</a>
+                    <ul>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Photo</a>
+                            <ul>
+                                <li><a href="#">Pribadi</a></li>
+                                <li><a href="#galeri">Umum</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#">Daftar Isi</a></li>
+                <li><a href="#">Buku Tamu</a></li>
+            </ul>
+        </div>
+
+        <div id="konten">
+            <div class="posttitle">Selamat Datang</div>
+            <div class="post">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum molestiae quas deserunt minima officiis? Est fuga dolores expedita, dolorem beatae nam inventore ipsam qui distinctio dicta nostrum officia, necessitatibus magni facere earum hic mollitia cumque ratione laboriosam provident vitae sint id natus? Molestiae perferendis dolor labore dolore. Inventore, exercitationem dolor.
+                </p>
+                <p>
+                    Untuk belajar HTML klik halaman <b><a href="#">HTML</a></b>
+                    dan belajar CSS ke halaman <b><a href="#">CSS</a></b>.
+                </p>
+            </div>
+            <div class="posttitle center">Galeri</div>
+            <div class="post" id="galeri">
+                <img src="images/gallery1.jpg" alt="konten 1">
+                <img src="images/gallery2.jpg" alt="konten 2">
+                <img src="images/gallery3.jpg" alt="konten 3">
+            </div>
+            <div class="posttitle center" id="kontak">Kontak</div>
+            <div class="post center">
+                <a href="https://www.facebook.com/nurfalah.abdurrozaq" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://t.me/Nufa_ar" class="fa fa-telegram" target="_blank"></a>
+                <a href="https://www.instagram.com/nfarozaq59" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://wa.me/6285155203747" class="fa fa-whatsapp" target="_blank"></a>
+            </div>
+        </div>
+
+        <div id="footer">
+            &copy; Copyright 2021. All Right Reserved. Nur Falah Abdurrozaq
+        </div>
+    </div>
+</body>
+</html>
