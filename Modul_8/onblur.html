@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar onBlur dan onFocus Javascript</title>
+</head>
+<body>
+    <script>
+        function danger(){
+            let nomor = document.f.inim.value;
+            if (nomor == "") {
+                document.getElementById('nimfokus').style.background = 'red';
+            }
+        }
+
+        function danger2(){
+            let namaa = document.f.inim.value;
+            if (namaa == "") {
+                document.getElementById('namafokus').style.background = 'red';
+            }
+        }
+
+        function fokus(){
+            document.getElementById('nimfokus').style.background = 'lightblue';
+        }
+
+        function fokus2(){
+            document.getElementById('nimfokus').style.background = 'lightblue';
+        }
+
+        function terimakasih(){
+            if(document.f.inim.value != "" && document.f.inama.value != ""){
+                alert('Terimakasih')
+            }else{
+                alert('Data tdk lengkap')
+            }
+        }
+    </script>
+
+    <center>
+        <h1>Event onFocus and onBlur</h1>
+        <hr>
+        <h3>REGISTRATION</h3>
+        <hr>
+
+        <form name="f">
+            Nim : <input type="text" name="inim" id="nimfokus" onfocus="fokus()" onblur="danger()"><br>
+            Nama : <input type="text" name="inama" id="namafokus" onfocus="fokus2()" onblur="danger2()"><br>
+
+            <input type="button" value="Kirim" onclick="terimakasih()">
+            <input type="reset" value="Reset">
+        </form>
+    </center>
+</body>
+</html>

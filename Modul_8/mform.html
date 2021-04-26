@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body>
+    
+
+    <!-- form untuk menangkap nilai -->
+    <form name="dform">
+        <h1>Masukan biodata anda</h1>
+        
+<pre>
+<!-- dibuat menjorok ke kiri agar berada di kiri, efek dari tag pre -->
+nama    : <input type="text" name="nama">
+alamat  : <input type="text" name="alamat">
+gender  : <input type="radio" value="perempuan" name="keterangan">Perempuan <input type="radio" value="laki-laki" name="keterangan">laki-laki
+jurusan : <select name="jurusan" id="jurusan">
+    <option value="teknik informatika">Teknik Informatika</option>
+    <option value="teknik sipil">Teknik Sipil</option>
+    <option value="teknik mesin">Teknik Mesin</option>
+</select>
+</pre>
+        <input type="button" value="masukkan" onclick="data()">
+        <input type="reset" value="reset">
+
+        <!-- menampilkan nilai tidak menggunakan pre -->
+        <h2>Keluaran : </h2>
+        nama : <input type="text" name="onama">
+        alamat : <input type="text" name="oalamat">
+        jurursan : <input type="text" name="ojurursan">
+        gender : <input type="text" name="oket">
+    </form>
+
+    <!-- javascript -->
+    <script>
+        function data(){
+            var nama = (document.dform.nama.value);
+            var alamat = (document.dform.alamat.value);
+            document.dform.onama.value = nama;
+            document.dform.oalamat.value = alamat;
+            var getJurusan = (document.dform.jurusan);
+            jurusan = getJurusan.options[getJurusan.selectedIndex].text;
+            document.dform.ojurusan.value = jurusan;
+            var keterangan = (document.dform.keterangan.value);
+            // document.dform.oket.value = keterangan;
+        }
+    </script>
+</body>
+</html>

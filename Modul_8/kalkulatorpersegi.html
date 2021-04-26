@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <form name="dform">
+        <!-- fotm untuk menangkap nilai -->
+        <h1>Masukan angka</h1>
+        <pre>
+lebar : <input type="text" name="panjang"> <!-- dibuat nebhirij je juru agar berada berada di kiri, efek dari tag pre.-->
+lebar : <input type="text" name="lebar"> <!-- dibuat nebhirij je juru agar berada berada di kiri, efek dari tag pre.-->
+        </pre>
+        <input type="button" value="hitung" onclick="luas()">
+        <input type="reset" value="reset">
+    </form>
+
+    <!-- javascript -->
+    <script>
+        function luas(){
+            var panjang = parseFloat(document.dform.panjang.value)
+            var lebar = parseFloat(document.dform.lebar.value)
+
+            if(isNaN(panjang)){
+                panjang = 0.0
+            }
+            if(isNaN(lebar)){
+                lebar = 0.0
+            }
+
+            var luas = panjang * lebar
+            alert("Hasilnya adalah " + luas)
+        }
+    </script>
+</body>
+</html>

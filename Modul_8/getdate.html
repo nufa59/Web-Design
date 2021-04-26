@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar getdate javascript</title>
+</head>
+<body>
+    <center>Latihan objek date</center>
+
+    <script lang="javascript">
+        let hari = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
+        let bulan = new Array('Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agus', 'Sep', 'Okt', 'Nov', 'Des');
+        let t = new Date();
+        let hari_ini = t.getDay();
+        let tanggal = t.getDate();
+        let bulan_ini = t.getMonth();
+        let tahun_ini = t.getFullYear();
+        let menit = t.getMinutes();
+        let jam = t.getHours();
+
+        let hariini = hari[hari_ini];
+        let bln = bulan[bulan_ini];
+
+        document.write('<hr>');
+        document.write(`<center>${jam}:${menit}</center>`)
+        document.write(`<center>${hari_ini}, ${tanggal}/${bulan_ini}/${tahun_ini}</center>`)
+        document.write(`<center>${hariini}, ${tanggal} ${bln} ${tahun_ini}</center>`)
+        document.write('<center></center>')
+    </script>
+</body>
+</html>
